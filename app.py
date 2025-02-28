@@ -31,7 +31,7 @@ le = LabelEncoder()
 le.classes_ = np.array(label_classes)
 
 # Load intents dataset
-with open('extracted/intents.json') as file:
+with open('intents.json') as file:
     data = json.load(file)
 
 max_len = model.input_shape[1]
